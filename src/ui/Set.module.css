@@ -1,0 +1,93 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Gender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+
+    border: 2px solid #C8C8C8;
+    border-radius: 12px;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #C8C8C8;
+
+    cursor: pointer;
+
+    transition: all 1s;
+}
+
+.GenderSelected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+
+    border: 8px solid #0A84FF;
+    border-radius: 12px;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #0A84FF;
+
+    cursor: pointer;
+
+    transition: all 1s;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(32, 90, 214, 0.295);
+    border: 1px solid rgba(102, 112, 248, 0.24);
+}
+
+.Age{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 80px;
+
+    border: 2px solid #C8C8C8;
+    border-radius: 8px;
+
+    font-size: 24px;
+    color: #C8C8C8;
+
+    cursor: pointer;
+
+    transition: all 1s;
+}
+
+.AgeSelected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 80px;
+
+    border: 4px solid #0A84FF;
+    border-radius: 8px;
+
+    font-size: 24px;
+    color: #0A84FF;
+
+    cursor: pointer;
+
+    transition: all 1s;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(32, 90, 214, 0.295);
+    border: 1px solid rgba(102, 112, 248, 0.24);
+   
+}

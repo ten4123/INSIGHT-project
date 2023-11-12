@@ -1,0 +1,18 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.Tile{
+    width: 480px;
+    height: 33.33vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.4s;
+    user-select: none;
+
+    font-size: 32px;
+    color: #ffffff;
+}

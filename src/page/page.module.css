@@ -1,0 +1,409 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.StartPage{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 244px 0px;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 120px;
+
+    background-color: #ffffff;
+}
+
+.StartpageVideo{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sub{
+    color: #181818;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.SetupPage{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 244px 0px;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+}
+
+.Setup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.pageInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.pageInfo h1{
+    font-size: 42px;
+}
+
+.pageInfo p{
+    font-size: 24px;
+}
+
+
+
+.choice{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 32px;
+}
+
+.gender{
+    display: flex;
+    gap: 16px;
+}
+
+.age{
+    display: flex;
+    gap: 16px;
+}
+
+.h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #191919;
+    text-align: center;
+}
+
+.p{
+    color: #191919;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.Calibration{
+    position: fixed;
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+}
+
+.tileBox{
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CamPage{
+    position: fixed;
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 244px 0px;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+}
+
+.Cam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.Cam p{
+    font-size: 24px;
+}
+
+.videoContainer {
+    position: relative; /* 상대적 위치 설정 */
+    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+    height: 240px; /* 초기 높이를 0으로 설정 */
+   
+}
+
+.Alret{
+    text-align: center;
+    position: absolute;
+    padding: 80px;
+    border-radius: 40px;
+    background-color: #eeeeee;
+
+    transition: all 1s ease-in;
+    font-size: 28px;
+    line-height: 1.7;
+}
+
+.Alret.opacity0{
+    opacity: 0;
+}
+.Alret.opacity0.Zindex0{
+    z-index: -10;
+}
+
+
+
+
+
+
+.EyeTrackingPage{
+    position: fixed;
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: #ffffff;
+}
+
+.progressBar {
+    position: fixed;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #407BFF;
+
+    transition: width 30s linear;
+}
+
+.progressBar.move{
+    width: 100vw;
+}
+
+
+.time{
+    position: absolute;
+    right: 120px;
+    bottom: 32px;
+    display: flex;
+    color: #fff;
+}
+
+.dimmedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.dimmedBackground.visible {
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+
+
+.PresonalAnalyzePage{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 244px 0px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.CardList {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+}
+
+.TotalAnalyzePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.TotalAnalyzePage p{
+    font-size: 28px;
+}
+
+.TotalAnalyzePage .boldP{
+    font-weight: bold;
+}
+
+
+.TotalCardArray{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: fit-content;
+    gap: 1vw;
+}
+
+.TotalCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+
+    width: 47vw;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 80px;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 4px 12px 0 rgba(32, 90, 214, 0.295); */
+    border: 2px solid rgba(102, 112, 248, 0.432);
+
+    overflow: hidden;
+}
+
+.TallTotalCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 95vw;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 40px;
+   
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 4px 12px 0 rgba(32, 90, 214, 0.295); */
+    border: 2px solid rgba(102, 112, 248, 0.432);
+}
+
+.menImages{
+    display: flex;
+    width: 30vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 8px;
+}
+
+.MenImage{
+    scale: 100%;
+}
+
+.MenImage2{
+    scale: 80%;
+}
+
+.MenImage3{
+    scale: 60%;
+}
+
+.MenImage4{
+    scale: 40%;
+}
+
+.MenImage5{
+    scale: 20%;
+}
+
+
+.SameAge{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.SameAge p{
+    text-align: center;
+}
+
+.Sortation{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+
+.GraphArray{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 100%;
+}
+
+.Graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    gap: 20px;
+}
+
+
+

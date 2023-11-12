@@ -1,0 +1,35 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Button{
+    width: 400px;
+    min-height: 100px;
+
+    background-color: #ffffff;
+    border-radius: 50px;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #1c5ce6;
+
+    cursor: pointer;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(32, 90, 214, 0.295);
+    border: 1px solid rgba(102, 112, 248, 0.24);
+
+    transition: all 0.2s;
+}
+
+.Button:hover{
+    box-shadow: 0 4px 12px 0 rgba(32, 90, 214, 0.349);
+}
+
+.Button:active{
+    background: rgba(178, 211, 255, 0.15);
+    
+}

@@ -1,0 +1,24 @@
+.MainCard {
+    width: 1440px;
+    height: 100vh;
+}
+
+
+.Image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity 0.5s ease, background-image 0.5s ease 0.5s; /* opacity와 background-image에 애니메이션 효과 적용 */
+    opacity: 1; /* 초기 투명도 설정 */
+}
+
+.MainCard.fade-out .Image {
+    opacity: 0; /* 투명도를 0으로 조정하여 이미지가 사라지는 효과 생성 */
+}
+
+/* fade-in 클래스는 .fade-out 후에 추가되어 이미지가 사라진 후 0.5초 뒤에 나타나는 효과 생성 */
+.MainCard.fade-in .Image {
+    opacity: 1;
+    transition-delay: 0.5s; /* 나타나는 효과가 0.5초 뒤에 시작되도록 지연 설정 */
+}
+
