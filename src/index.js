@@ -15,7 +15,7 @@ import TotalAnalyzePage from './page/TotalAnalyzePage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GenderAgeProvider>
         <Routes>
           <Route index element={<StartPage />} />
